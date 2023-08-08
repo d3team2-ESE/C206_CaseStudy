@@ -1,7 +1,7 @@
 
 public class RegisterUser {
-	public class RegisterUser {
 
+	//
 		  private String name;
 		  private String email;
 		  private String password;
@@ -70,4 +70,4 @@ public class RegisterUser {
 		  }
 		  
 		}
-}
+
