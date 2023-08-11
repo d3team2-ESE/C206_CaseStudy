@@ -1,6 +1,6 @@
 
 public class JobApplication {
-	//
+	////
 	    private String name;
 	    private String position;
 	    private String status;
