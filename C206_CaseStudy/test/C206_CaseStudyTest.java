@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class C206_CaseStudyTest {
-
+//
 	private RegisterUser user1;
 	private RegisterUser user2;
 	private RegisterUser user3;
