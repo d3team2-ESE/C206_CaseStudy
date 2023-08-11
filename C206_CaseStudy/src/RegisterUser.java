@@ -1,73 +1,73 @@
 
 public class RegisterUser {
 
-	//
-		  private String name;
-		  private String email;
-		  private String password;
-		  private String userid;
-		  private int contactnum;
-		  private String dob;
-		  private String gender;
-		  
-		  public RegisterUser(String name, String email, String password, String userid, int contactnum, String dob, String gender) {
-		    super();
-		    this.name = name;
-		    this.email = email;
-		    this.password = password;
-		    this.userid = userid;
-		    this.contactnum = contactnum;
-		    this.dob = dob;
-		    this.gender = gender;
-		    
-		  }
-		  
-		  public String getName() {
-		    return name;
-		  }
+	private String name;
+	private String email;
+	private String password;
 
-		  public void setName(String name) {
-		    this.name = name;
-		  }
+	public RegisterUser(String name, String email, String password) {
+		this.name = name;
+		this.email = email;
+		this.password = password;
+	}
 
-		  public String getEmail() {
-		    return email;
-		  }
-		  public void setEmail(String email) {
-		    this.email = email;
-		  }
-		  public String getPassword() {
-		    return password;
-		  }
-		  public void setPassword(String password) {
-		    this.password = password;
-		  }
-		  public String getUserid() {
-		    return userid;
-		  }
-		  public void setUserid(String userid) {
-		    this.userid = userid;
-		  }
-		  public int getContactnum() {
-		    return contactnum;
-		  }
-		  public void setContactnum(int contactnum) {
-		    this.contactnum = contactnum;
-		  }
+	private String ProfileName;
+	private String ProfileEmail;
+	private String ProfilePassword;
 
-		  public String getDob() {
-		    return dob;
-		  }
-		  public void setDob(String dob) {
-		    this.dob = dob;
-		  }
-		  public String getGender() {
-		    return gender;
-		  }
+	public void Profile(String ProfileName, String ProfileEmail, String ProfilePassword) {
+		this.ProfileName = ProfileName;
+		this.ProfileEmail = ProfileEmail;
+		this.ProfilePassword = ProfilePassword;
+	}
 
-		  public void setGender(String gender) {
-		    this.gender = gender;
-		  }
-		  
-		}
+	public String getName() {
+		return name;
+	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void viewAllUsers() {
+		System.out.println("Name: " + name);
+		System.out.println("Email: " + email);
+		System.out.println("Password: " + password);
+	}
+
+	public String getProfileName() {
+		return ProfileName;
+	}
+
+	public void setProfileName(String ProfileName) {
+		this.ProfileName = ProfileName;
+	}
+
+	public String getProfileEmail() {
+		return ProfileEmail;
+	}
+
+	public void setProfileEmail(String ProfileEmail) {
+		this.ProfileEmail = ProfileEmail;
+	}
+
+	public String getProfilePassword() {
+		return ProfilePassword;
+	}
+
+	public void setProfilePassword(String ProfilePassword) {
+		this.ProfilePassword = ProfilePassword;
+	}
+
+	public String toString() {
+		String output = "";
+		output += "Name: " + getProfileName() + "Email: " + getProfileEmail() + "Password: " + getProfilePassword();
+
+		return output;
+	}
+
+}
