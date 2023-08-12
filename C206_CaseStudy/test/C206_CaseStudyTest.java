@@ -57,10 +57,10 @@ public class C206_CaseStudyTest {
 	}
 
 	@Test
-    public void testImcompleteFields() {
-    	
-        
-        assertTrue("User with missing email should not be valid", !user3.getEmail().isEmpty());
+	public void testImcompleteFields() {
+
+		assertTrue("User with missing email should not be valid", !user3.getEmail().isEmpty());
+	}
 
 	@Test
 	public void testViewAllCourses() {
@@ -87,8 +87,6 @@ public class C206_CaseStudyTest {
 		C206_CaseStudy.Course course3 = courses.get(2);
 		assertEquals("Test Course 3", course3.getCourseName());
 		assertEquals("Test Instructor 3", course3.getTeacher());
-	}
-
 	}
 
 	@Test
@@ -141,18 +139,6 @@ public class C206_CaseStudyTest {
 
 	}
 
-	}
-
-	@After
-	public void tearDown() throws Exception {
-		user1 = null;
-		user2 = null;
-		user3 = null;
-		userList = null;
-	}
-
-}
-
 	public void testDeleteCourse() {
 		Course newCourse = new Course();
 		C206_CaseStudy.Course.addCourse("Test Course 1", "Test description 1", "Test duration 1",
@@ -171,21 +157,12 @@ public class C206_CaseStudyTest {
 		assertFalse(Course.deleteCourse("Nonexistent Course"));
 	}
 
-	@Before
-	public void setUp() throws Exception {
-
-	}
-
 	@After
 	public void tearDown() throws Exception {
-
-	}
-
-	@Test
-	public void c206_test() {
-
-		// fail("Not yet implemented");
-		assertTrue("C206_CaseStudy_SampleTest ", true);
+		user1 = null;
+		user2 = null;
+		user3 = null;
+		userList = null;
 	}
 
 }
